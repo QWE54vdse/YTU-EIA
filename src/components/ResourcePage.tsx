@@ -1,8 +1,7 @@
 import { useState, useMemo, useCallback } from 'react'
-import { Input, Table, Typography, message } from 'antd'
+import { Input, Table, Typography } from 'antd'
 import { DownloadOutlined } from '@ant-design/icons'
 import { useNavigate } from 'react-router-dom'
-import { useAuth } from '../context/AuthContext'
 import type { ColumnsType } from 'antd/es/table'
 import Galaxy from './animations/BackGalaxy'
 
@@ -19,7 +18,6 @@ interface ResourcePageProps {
 }
 
 export default function ResourcePage({ data }: ResourcePageProps) {
-  const { user } = useAuth()
   const navigate = useNavigate()
   const [search, setSearch] = useState('')
 
@@ -34,13 +32,8 @@ export default function ResourcePage({ data }: ResourcePageProps) {
   }, [search, data])
 
   const handleDownload = useCallback((item: ResourceItem) => {
-    if (!user) {
-      message.warning('请先登录后再下载资料')
-      navigate('/login')
-      return
-    }
     window.open(item.link, '_blank', 'noopener')
-  }, [user, navigate])
+  }, [navigate])
 
   const columns: ColumnsType<ResourceItem> = [
     { title: '#', dataIndex: 'id', key: 'id', width: 60, render: (v) => <Typography.Text style={{ color: 'rgba(255,255,255,0.45)' }}>{v}</Typography.Text> },
