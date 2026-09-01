@@ -1,0 +1,190 @@
+        .competition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .competition-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px;
+            border: 1px solid rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+        }
+        .competition-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--card-accent, #00d4ff);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+        }
+        .competition-card.clickable {
+            cursor: pointer;
+        }
+        .comp-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+        .comp-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: rgba(0,0,0,0.85);
+            margin: 0 0 10px;
+        }
+        .comp-desc {
+            font-size: 14px;
+            line-height: 1.7;
+            color: rgba(0,0,0,0.45);
+            margin: 0 0 12px;
+        }
+        .comp-more {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--card-accent, #00d4ff);
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: gap 0.2s;
+        }
+        .competition-card:hover .comp-more {
+            gap: 8px;
+        }
+
+        /* 详情弹窗 */
+        .event-detail {
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .detail-bar {
+            height: 4px;
+        }
+        .detail-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 28px 28px 24px;
+        }
+        .detail-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        .detail-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: rgba(0,0,0,0.85);
+            margin: 0 0 4px;
+        }
+        .detail-subtitle {
+            font-size: 13px;
+            color: rgba(0,0,0,0.45);
+            margin: 0;
+            line-height: 1.5;
+        }
+        .detail-body {
+            padding: 0 28px 28px;
+        }
+        .detail-image-placeholder {
+            width: 100%;
+            height: 200px;
+            border-radius: 12px;
+            border: 2px dashed rgba(0,0,0,0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 14px;
+            background: rgba(0,0,0,0.02);
+        }
+        .detail-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .detail-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 14px;
+            background: rgba(0,0,0,0.02);
+            border-radius: 12px;
+            font-size: 14px;
+        }
+        .detail-info-item:last-child {
+            grid-column: span 2;
+        }
+        .detail-info-item .anticon {
+            font-size: 18px;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+        .info-label {
+            display: block;
+            font-size: 11px;
+            font-weight: 600;
+            color: rgba(0,0,0,0.35);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+        }
+        .info-value {
+            display: block;
+            color: rgba(0,0,0,0.85);
+            line-height: 1.4;
+        }
+        .detail-section {
+            margin-bottom: 20px;
+        }
+        .detail-section-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .detail-section-header .anticon {
+            font-size: 17px;
+        }
+        .detail-section-header h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: rgba(0,0,0,0.85);
+            margin: 0;
+        }
+        .detail-text {
+            font-size: 14px;
+            line-height: 1.8;
+            color: rgba(0,0,0,0.6);
+            margin: 0;
+        }
+        .detail-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .detail-tag {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        @media (max-width: 640px) {
+            .competition-grid {
+            grid-template-columns: 1fr;
+        }
+        .detail-info-grid {
+            grid-template-columns: 1fr;
+        }
+        .detail-info-item:last-child {
+            grid-column: span 1;
+        }
+        }
