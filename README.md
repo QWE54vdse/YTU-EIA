@@ -21,7 +21,8 @@ npm run dev        # 启动前端开发服务器 (http://localhost:5173)
 前端通过 Vite 代理把 `/api` 转发到 `http://localhost:8080`，如需完整功能请同时启动后端：
 
 ```bash
-npm run dev:server   # 启动 server/ 后端
+npm run dev:app   # 启动 Elysia/ 后端
+npm run dev:server #或者 express/ 后端
 ```
 
 ## 构建与预览
