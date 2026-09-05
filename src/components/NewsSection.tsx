@@ -74,7 +74,7 @@ const newsList: NewsItem[] = [
     date: '2026-05-10',
     category: '竞赛',
     color: colors['竞赛'],
-    title: '协会在全国大学生集成电路创新创业竞赛中荣获华北赛区一等奖',
+    title: '协会在全国大学生集成电路创新创业竞赛中荣获华北赛区全国二等奖',
     excerpt: '经过激烈角逐,协会参赛团队在省赛中脱颖而出,为协会赢得荣誉。',
     detail: {
       content: [
