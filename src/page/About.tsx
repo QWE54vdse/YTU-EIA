@@ -43,7 +43,7 @@ const viceGroups = [
 
 
 const joinCards = [
-  { icon: <FileTextOutlined />, title: '入会公告', desc: '请相关同学提前做好准备', color: '#00F0FF', link: '/reexam' },
+  { icon: <FileTextOutlined />, title: '公告', desc: '请相关同学提前做好准备', color: '#00F0FF', link: '/reexam' },
   { icon: <ThunderboltOutlined />, title: 'STI', desc: 'STI小组代表电协的精英力量', color: '#ff6b35', link: '/STI' },
   { icon: <TrophyOutlined />, title: '比赛', desc: '协会不定期举办各类比赛', color: '#b44dff', link: '/completition' },
 ]
