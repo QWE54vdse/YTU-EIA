@@ -37,3 +37,4 @@ npm run preview  # 本地预览构建产物
 - 在线地址: https://QWE54vdse.github.io/YTU-EIA/
 - 手动触发: 仓库 Actions 页面 → "Deploy to GitHub Pages" → Run workflow
 
+加入新会，纳新群
