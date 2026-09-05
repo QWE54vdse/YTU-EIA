@@ -60,7 +60,7 @@ export default function ReExam() {
         />
         <div style={{ position: 'relative', textAlign: 'center', color: '#fff' }}>
           <Typography.Title level={1} style={{ color: '#fff', margin: 0, fontSize: 'clamp(36px, 5vw, 56px)' }}>
-            入会复试
+            入会公告
           </Typography.Title>
           <Typography.Text style={{ color: 'rgba(255,255,255,0.6)' }}>
             <Link to="/" style={{ color: 'inherit' }}>首页</Link> / 加入我们
@@ -69,9 +69,10 @@ export default function ReExam() {
       </div>
 
       <div style={{ maxWidth: 960, margin: '48px auto', padding: '0 24px 80px', color: 'rgba(0,0,0,0.85)' }}>
-        <Typography.Title level={2} style={{ color: 'rgba(0,0,0,0.85)' }}>复试公告</Typography.Title>
+        <Typography.Title level={2} style={{ color: 'rgba(0,0,0,0.85)' }}>入会公告</Typography.Title>
         <Typography.Paragraph style={{ fontSize: 16, color: 'rgba(0,0,0,0.85)' }}>
-          烟台大学电子信息协会的复试将定于2024年10月12日进行，具体复试地点尚未确定，后续将会公布。请相关同学提前做好准备，复试内容如下：
+          加入烟台大学电子信息协会请将报名申请表于2026年10月12日前提交至化院112，逾期将不再接收。另请同学做好学习的准备，各部门的学习
+          内容如下：
         </Typography.Paragraph>
         <style>{`
   .reexam-table .ant-table {
