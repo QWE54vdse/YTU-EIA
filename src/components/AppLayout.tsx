@@ -114,20 +114,6 @@ export default function AppLayout() {
             }}
           />
         </div>
-        <Link to={user ? '/profile' : '/login'}>
-          <Button
-            type="primary"
-            style={{
-              background: 'linear-gradient(135deg, #00d4ff, #0099cc)',
-              border: 'none',
-              borderRadius: 8,
-              fontWeight: 600,
-              color: '#fff',
-            }}
-          >
-            {user ? '已登录' : '登录'}
-          </Button>
-        </Link>
       </Header>
       <Content style={isHome ? { padding: 0 } : {
         padding: '24px 48px',
