@@ -17,12 +17,18 @@ interface NewsItem {
   detail: NewsDetail
 }
 
+const colors= {
+  '竞赛': '#ff6b35',
+  '公告': '#00d4ff',
+  '招新': '#00e676',
+}
+
 const newsList: NewsItem[] = [
   {
     id: 1,
     date: '2026-07-20',
     category: '竞赛',
-    color: '#ff6b35',
+    color: colors['竞赛'],
     title: '协会在第十六届 iCAN 大学生创新创业大赛中荣获全国一等奖',
     excerpt: '经过数月备战,我协会参赛团队在 iCAN 大赛中斩获国家级一等奖,实现了历史性突破。',
     detail: {
@@ -34,25 +40,10 @@ const newsList: NewsItem[] = [
     },
   },
   {
-    id: 2,
-    date: '2026-07-05',
-    category: '活动',
-    color: '#b44dff',
-    title: '2026 暑期科技培训营正式启动',
-    excerpt: '面向全体会员的暑期培训营涵盖嵌入式开发、Web 前端与算法基础等方向,报名通道现已开启。',
-    detail: {
-      content: [
-        '2026 暑期科技培训营将于 7 月中旬正式启动,面向全体协会会员开放报名。本次培训营设置嵌入式开发、Web 前端、算法基础三个方向,旨在帮助成员在假期系统提升实践能力。',
-        '嵌入式方向将由硬件部骨干主讲,覆盖 STM32 入门、传感器应用与基础项目实战;Web 前端方向聚焦 React + Vite 现代工程实践与组件化开发;算法方向则围绕数据结构、常用算法与竞赛技巧展开讲解与练习。',
-        '报名截止日期为 7 月 10 日,名额有限,请同学们尽快通过协会官方群报名。',
-      ],
-    },
-  },
-  {
     id: 3,
     date: '2026-06-18',
     category: '公告',
-    color: '#00d4ff',
+    color: colors['公告'],
     title: '软件部前端技术分享会圆满结束',
     excerpt: '软件部以 React + Vite 为主题分享了现代前端工程实践,现场交流氛围热烈。',
     detail: {
@@ -67,7 +58,7 @@ const newsList: NewsItem[] = [
     id: 4,
     date: '2026-05-28',
     category: '招新',
-    color: '#00e676',
+    color:colors['招新'],
     title: '春季招新正式开始,欢迎加入电协大家庭',
     excerpt: '无论你是编程新手还是硬件发烧友,电子信息协会都期待你的到来。',
     detail: {
@@ -79,10 +70,10 @@ const newsList: NewsItem[] = [
     },
   },
   {
-    id: 5,
+    id: 2,
     date: '2026-05-10',
     category: '竞赛',
-    color: '#ff6b35',
+    color: colors['竞赛'],
     title: '协会在全国大学生集成电路创新创业竞赛中荣获华北赛区一等奖',
     excerpt: '经过激烈角逐,协会参赛团队在省赛中脱颖而出,为协会赢得荣誉。',
     detail: {
