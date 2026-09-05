@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Layout, Menu, Button } from 'antd'
 import { Link, Outlet, useLocation } from 'react-router-dom'
-import { useAuth } from '../context/AuthContext'
+//import { useAuth } from '../context/AuthContext'
 import xiehui from '../assets/xiehuibiao.png'
 
 
@@ -43,7 +43,7 @@ const parentMap: Record<string, string> = {
 }
 
 export default function AppLayout() {
-  const { user } = useAuth()
+  // const { user } = useAuth()
   const location = useLocation()
   // const navigate = useNavigate()
   const isHome = location.pathname === '/'
