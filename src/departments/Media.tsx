@@ -1,6 +1,6 @@
 import { PlayCircleOutlined } from '@ant-design/icons'
 import DepartmentTemplate from '../components/DepartmentTemplate'
-import heroBg from '../assets/R (1).jpg'
+import heroBg from '../assets/R1.jpg'
 
 
 const accent = '#b44dff'
